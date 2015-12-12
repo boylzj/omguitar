@@ -1,0 +1,275 @@
+/*--------------------
+	DIAGRAMS COMMON
+----------------------*/
+.diaL, .diaM, .diaS { position:relative; float:left; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.5); border:1pt solid #C0AFA0; }
+.diaL b, .diaM b, .diaS b { position:absolute; display:block; text-indent:-9000px; }
+.diaL b.fret, .diaM b.fret, .diaS b.fret { top:.5em; padding:.4em; width:auto; height:auto; background:#333; border-radius: 0px 3px 3px 0px;
+	text-indent:0; text-align:right; color:#fff;box-shadow: 0px 0px 3px #000; }
+.diaL b.note, .diaM b.note, .diaS b.note { top:100%; background:none; font-size:.7em; text-indent:0; text-align:center; color:#444; margin-top:0.2em;}
+
+/*--------------------
+	DIAGRAMS LARGE
+----------------------*/
+.diaL   { width:110px; height:152px; margin-right:.9em; background:url(../../images/guitar/neck.png) no-repeat 0 0; }
+.diaL b { width:20px; height:20px; background:url(../../images/guitar/finger.png) no-repeat; }
+.diaL b.fret { left:100%; font-size:.75em; font-weight: normal;}
+b.nut { display:none !important; }
+/* .diaL b.nut  { top:-4px; left:0; width:100%; height:4px; line-height:0; background:none; background-color:#000; } */
+
+/*---------------------
+	DIAGRAMS MEDIUM
+-----------------------*/
+.diaM   { width:75px; height:103px; margin-right:.9em; background:url(../../images/guitar/neck.png) no-repeat 0 0; }
+.diaM b { width:15px; height:15px; background:url(../../images/guitar/finger.png) no-repeat; }
+.diaM b.fret { left:100%; font-size:.7em; }
+.diaM b.note{ font-size:.7em; }
+
+.searchResults .diaM { margin-left:1.2em; `margin-left:1em; }
+
+/*--------------------
+	DIAGRAMS SMALL
+----------------------*/
+.diaS   { width:55px; height:76px; margin-right:.9em; background:url(../../images/guitar/neck.png) no-repeat 0 0; }
+.diaS b { width:10px; height:10px; background:url(../../images/guitar/finger.png) no-repeat; }
+.diaS b.fret { left:100%; font-size:.6em; }
+.diaS b.note { font-size:.6em; }
+
+.searchResults .diaS { margin-right:2em; }
+
+img.print { display:none; }
+
+/*---------------
+	Fingering
+-----------------*/
+b.fx { background-position:0 0; }
+b.fo { background-position:0 16%; }
+b.f1 { background-position:0 32%; }
+b.f2 { background-position:0 48%; }
+b.f3 { background-position:0 65%; }
+b.f4 { background-position:0 82%; }
+b.f0 { background-position:0 98%; }
+
+/*------------
+	Notes
+--------------*/
+.n1, .n7,  .n13, .n19, .n25, .n31, .n37, .n43, .n49, .n55, .n61, .n67, .n73, .n79, .n85, .n91, .n97,  .n103, .n109, .n115, .n121 { left:84%; }
+.n2, .n8,  .n14, .n20, .n26, .n32, .n38, .n44, .n50, .n56, .n62, .n68, .n74, .n80, .n86, .n92, .n98,  .n104, .n110, .n116, .n122 { left:67.5%; }
+.n3, .n9,  .n15, .n21, .n27, .n33, .n39, .n45, .n51, .n57, .n63, .n69, .n75, .n81, .n87, .n93, .n99,  .n105, .n111, .n117, .n123 { left:50%; }
+.n4, .n10, .n16, .n22, .n28, .n34, .n40, .n46, .n52, .n58, .n64, .n70, .n76, .n82, .n88, .n94, .n100, .n106, .n112, .n118, .n124 { left:32%; }
+.n5, .n11, .n17, .n23, .n29, .n35, .n41, .n47, .n53, .n59, .n65, .n71, .n77, .n83, .n89, .n95, .n101, .n107, .n113, .n119, .n125 { left:14.1%; }
+.n6, .n12, .n18, .n24, .n30, .n36, .n42, .n48, .n54, .n60, .n66, .n72, .n78, .n84, .n90, .n96, .n102, .n108, .n114, .n120, .n126 { left:-4%; }
+
+/*---------------
+	Bars - Sizes
+-----------------*/
+/* Large */ 
+b.bar2, b.bar3, b.bar4, b.bar5, b.bar6 { height:10%; margin:-12% -5%; background:url(../../images/guitar/bar.png) no-repeat; }
+/* Medium */ 
+.diaM b.bar2, .diaM b.bar3, .diaM b.bar4, .diaM b.bar5, .diaM b.bar6 { height:10%; margin:-12% -5%; background:url(../../images/guitar/bar.png) no-repeat; }
+/* Small */ 
+.diaS b.bar2, .diaS b.bar3, .diaS b.bar4, .diaS b.bar5, .diaS b.bar6 { height:10%; margin:-12% -5%; background:url(../../images/guitar/bar.png) no-repeat; }
+
+/*---------------
+	Bars - Positions
+-----------------*/
+b.bar2 { width:40%;  background-position:100% 0 !important; }
+b.bar3 { width:60%;  background-position:100% 25% !important; }
+b.bar4 { width:78%;  background-position:100% 50% !important; }
+b.bar5 { width:99%;  background-position:100% 72% !important; }
+b.bar6 { width:115%; background-position:100% 99% !important; }
+
+/*-------------------------------
+	Stings - Open and Muted
+---------------------------------*/
+/* Top */
+.s1, .s2, .s3, .s4, .s5, .s6 { top:-14.1%; }
+/* Left */
+.s1 { left:84%; }
+.s2 { left:67.5%; }
+.s3 { left:50%; }
+.s4 { left:32%; }
+.s5 { left:14.1%; }
+.s6 { left:-4%; }
+
+/*---------------
+	Frets
+-----------------*/
+.fret1 	{ background-position:0 0; }
+.fret2 	{ background-position:0 6.25%; }
+.fret3 	{ background-position:0 12.5%; }
+.fret4 	{ background-position:0 18.75%; }
+.fret5 	{ background-position:0 25%; }
+.fret6 	{ background-position:0 31.25%; }
+.fret7 	{ background-position:0 37.5%; }
+.fret8 	{ background-position:0 43.75%; }
+.fret9 	{ background-position:0 50%; }
+.fret10 { background-position:0 56.25%; }
+.fret11 { background-position:0 62.5%; }
+.fret12 { background-position:0 68.75%; }
+.fret13 { background-position:0 75%; }
+.fret14 { background-position:0 81.25%; }
+.fret15 { background-position:0 87.5%; }
+.fret16 { background-position:0 100%; }
+
+/*----------------------------
+	COLUMNS - TOP POSITION
+------------------------------*/
+/* 1 */
+.fret1 .s7,  .fret2  .s13, .fret3  .s19, .fret4  .s25, .fret5  .s31, .fret6  .s37, .fret7  .s43, .fret8  .s49,
+.fret1 .s8,  .fret2  .s14, .fret3  .s20, .fret4  .s26, .fret5  .s32, .fret6  .s38, .fret7  .s44, .fret8  .s50,
+.fret1 .s9,  .fret2  .s15, .fret3  .s21, .fret4  .s27, .fret5  .s33, .fret6  .s39, .fret7  .s45, .fret8  .s51,
+.fret1 .s10, .fret2  .s16, .fret3  .s22, .fret4  .s28, .fret5  .s34, .fret6  .s40, .fret7  .s46, .fret8  .s52,
+.fret1 .s11, .fret2  .s17, .fret3  .s23, .fret4  .s29, .fret5  .s35, .fret6  .s41, .fret7  .s47, .fret8  .s53,
+.fret1 .s12, .fret2  .s18, .fret3  .s24, .fret4  .s30, .fret5  .s36, .fret6  .s42, .fret7  .s48, .fret8  .s54,
+.fret9 .s55, .fret10 .s61, .fret11 .s67, .fret12 .s73, .fret13 .s79, .fret14 .s85, .fret15 .s91, .fret16 .s97,
+.fret9 .s56, .fret10 .s62, .fret11 .s68, .fret12 .s74, .fret13 .s80, .fret14 .s86, .fret15 .s92, .fret16 .s98,
+.fret9 .s57, .fret10 .s63, .fret11 .s69, .fret12 .s75, .fret13 .s81, .fret14 .s87, .fret15 .s93, .fret16 .s99,
+.fret9 .s58, .fret10 .s64, .fret11 .s70, .fret12 .s76, .fret13 .s82, .fret14 .s88, .fret15 .s94, .fret16 .s100,
+.fret9 .s59, .fret10 .s65, .fret11 .s71, .fret12 .s77, .fret13 .s83, .fret14 .s89, .fret15 .s95, .fret16 .s101,
+.fret9 .s60, .fret10 .s66, .fret11 .s72, .fret12 .s78, .fret13 .s84, .fret14 .s90, .fret15 .s96, .fret16 .s102 { top:4%; }
+
+/* 2 */
+.fret1 .s13, .fret2  .s19, .fret3  .s25, .fret4  .s31, .fret5  .s37, .fret6  .s43, .fret7  .s49,  .fret8  .s55,
+.fret1 .s14, .fret2  .s20, .fret3  .s26, .fret4  .s32, .fret5  .s38, .fret6  .s44, .fret7  .s50,  .fret8  .s56,
+.fret1 .s15, .fret2  .s21, .fret3  .s27, .fret4  .s33, .fret5  .s39, .fret6  .s45, .fret7  .s51,  .fret8  .s57,
+.fret1 .s16, .fret2  .s22, .fret3  .s28, .fret4  .s34, .fret5  .s40, .fret6  .s46, .fret7  .s52,  .fret8  .s58,
+.fret1 .s17, .fret2  .s23, .fret3  .s29, .fret4  .s35, .fret5  .s41, .fret6  .s47, .fret7  .s53,  .fret8  .s59,
+.fret1 .s18, .fret2  .s24, .fret3  .s30, .fret4  .s36, .fret5  .s42, .fret6  .s48, .fret7  .s54,  .fret8  .s60,
+.fret9 .s61, .fret10 .s67, .fret11 .s73, .fret12 .s79, .fret13 .s85, .fret14 .s91, .fret15 .s97,  .fret16 .s103,
+.fret9 .s62, .fret10 .s68, .fret11 .s74, .fret12 .s80, .fret13 .s86, .fret14 .s92, .fret15 .s98,  .fret16 .s104,
+.fret9 .s63, .fret10 .s69, .fret11 .s75, .fret12 .s81, .fret13 .s87, .fret14 .s93, .fret15 .s99,  .fret16 .s105,
+.fret9 .s64, .fret10 .s70, .fret11 .s76, .fret12 .s82, .fret13 .s88, .fret14 .s94, .fret15 .s100, .fret16 .s106,
+.fret9 .s65, .fret10 .s71, .fret11 .s77, .fret12 .s83, .fret13 .s89, .fret14 .s95, .fret15 .s101, .fret16 .s107,
+.fret9 .s66, .fret10 .s72, .fret11 .s78, .fret12 .s84, .fret13 .s90, .fret14 .s96, .fret15 .s102, .fret16 .s108 { top:23%; }
+
+/* 3 */
+.fret1 .s19, .fret2  .s25, .fret3  .s31, .fret4  .s37, .fret5  .s43, .fret6  .s49,  .fret7  .s55,  .fret8  .s61,
+.fret1 .s20, .fret2  .s26, .fret3  .s32, .fret4  .s38, .fret5  .s44, .fret6  .s50,  .fret7  .s56,  .fret8  .s62,
+.fret1 .s21, .fret2  .s27, .fret3  .s33, .fret4  .s39, .fret5  .s45, .fret6  .s51,  .fret7  .s57,  .fret8  .s63,
+.fret1 .s22, .fret2  .s28, .fret3  .s34, .fret4  .s40, .fret5  .s46, .fret6  .s52,  .fret7  .s58,  .fret8  .s64,
+.fret1 .s23, .fret2  .s29, .fret3  .s35, .fret4  .s41, .fret5  .s47, .fret6  .s53,  .fret7  .s59,  .fret8  .s65,
+.fret1 .s24, .fret2  .s30, .fret3  .s36, .fret4  .s42, .fret5  .s48, .fret6  .s54,  .fret7  .s60,  .fret8  .s66,
+.fret9 .s67, .fret10 .s73, .fret11 .s79, .fret12 .s85, .fret13 .s91, .fret14 .s97,  .fret15 .s103, .fret16 .s109,
+.fret9 .s68, .fret10 .s74, .fret11 .s80, .fret12 .s86, .fret13 .s92, .fret14 .s98,  .fret15 .s104, .fret16 .s110,
+.fret9 .s69, .fret10 .s75, .fret11 .s81, .fret12 .s87, .fret13 .s93, .fret14 .s99,  .fret15 .s105, .fret16 .s111,
+.fret9 .s70, .fret10 .s76, .fret11 .s82, .fret12 .s88, .fret13 .s94, .fret14 .s100, .fret15 .s106, .fret16 .s112,
+.fret9 .s71, .fret10 .s77, .fret11 .s83, .fret12 .s89, .fret13 .s95, .fret14 .s101, .fret15 .s107, .fret16 .s113,
+.fret9 .s72, .fret10 .s78, .fret11 .s84, .fret12 .s90, .fret13 .s96, .fret14 .s102, .fret15 .s108, .fret16 .s114 { top:43%; }
+
+/* 4 */
+.fret1 .s25, .fret2  .s31, .fret3  .s37, .fret4  .s43, .fret5  .s49,  .fret6  .s55,  .fret7  .s61,  .fret8  .s67,
+.fret1 .s26, .fret2  .s32, .fret3  .s38, .fret4  .s44, .fret5  .s50,  .fret6  .s56,  .fret7  .s62,  .fret8  .s68,
+.fret1 .s27, .fret2  .s33, .fret3  .s39, .fret4  .s45, .fret5  .s51,  .fret6  .s57,  .fret7  .s63,  .fret8  .s69,
+.fret1 .s28, .fret2  .s34, .fret3  .s40, .fret4  .s46, .fret5  .s52,  .fret6  .s58,  .fret7  .s64,  .fret8  .s70,
+.fret1 .s29, .fret2  .s35, .fret3  .s41, .fret4  .s47, .fret5  .s53,  .fret6  .s59,  .fret7  .s65,  .fret8  .s71,
+.fret1 .s30, .fret2  .s36, .fret3  .s42, .fret4  .s48, .fret5  .s54,  .fret6  .s60,  .fret7  .s66,  .fret8  .s72,
+.fret9 .s73, .fret10 .s79, .fret11 .s85, .fret12 .s91, .fret13 .s97,  .fret14 .s103, .fret15 .s109, .fret16 .s115,
+.fret9 .s74, .fret10 .s80, .fret11 .s86, .fret12 .s92, .fret13 .s98,  .fret14 .s104, .fret15 .s110, .fret16 .s116,
+.fret9 .s75, .fret10 .s81, .fret11 .s87, .fret12 .s93, .fret13 .s99,  .fret14 .s105, .fret15 .s111, .fret16 .s117,
+.fret9 .s76, .fret10 .s82, .fret11 .s88, .fret12 .s94, .fret13 .s100, .fret14 .s106, .fret15 .s112, .fret16 .s118,
+.fret9 .s77, .fret10 .s83, .fret11 .s89, .fret12 .s95, .fret13 .s101, .fret14 .s107, .fret15 .s113, .fret16 .s119,
+.fret9 .s78, .fret10 .s84, .fret11 .s90, .fret12 .s96, .fret13 .s102, .fret14 .s108, .fret15 .s114, .fret16 .s120 { top:63%; }
+
+/* 5 */
+.fret1 .s31, .fret2  .s37, .fret3  .s43, .fret4  .s49,  .fret5  .s55,  .fret6  .s61,  .fret7  .s67,  .fret8  .s73,
+.fret1 .s32, .fret2  .s38, .fret3  .s44, .fret4  .s50,  .fret5  .s56,  .fret6  .s62,  .fret7  .s68,  .fret8  .s74,
+.fret1 .s33, .fret2  .s39, .fret3  .s45, .fret4  .s51,  .fret5  .s57,  .fret6  .s63,  .fret7  .s69,  .fret8  .s75,
+.fret1 .s34, .fret2  .s40, .fret3  .s46, .fret4  .s52,  .fret5  .s58,  .fret6  .s64,  .fret7  .s70,  .fret8  .s76,
+.fret1 .s35, .fret2  .s41, .fret3  .s47, .fret4  .s53,  .fret5  .s59,  .fret6  .s65,  .fret7  .s71,  .fret8  .s77,
+.fret1 .s36, .fret2  .s42, .fret3  .s48, .fret4  .s54,  .fret5  .s60,  .fret6  .s66,  .fret7  .s72,  .fret8  .s78,
+.fret9 .s79, .fret10 .s85, .fret11 .s91, .fret12 .s97,  .fret13 .s103, .fret14 .s109, .fret15 .s115, .fret16 .s121,
+.fret9 .s80, .fret10 .s86, .fret11 .s92, .fret12 .s98,  .fret13 .s104, .fret14 .s110, .fret15 .s116, .fret16 .s122,
+.fret9 .s81, .fret10 .s87, .fret11 .s93, .fret12 .s99,  .fret13 .s105, .fret14 .s111, .fret15 .s117, .fret16 .s123,
+.fret9 .s82, .fret10 .s88, .fret11 .s94, .fret12 .s100, .fret13 .s106, .fret14 .s112, .fret15 .s118, .fret16 .s124,
+.fret9 .s83, .fret10 .s89, .fret11 .s95, .fret12 .s101, .fret13 .s107, .fret14 .s113, .fret15 .s119, .fret16 .s125,
+.fret9 .s84, .fret10 .s90, .fret11 .s96, .fret12 .s102, .fret13 .s108, .fret14 .s114, .fret15 .s120, .fret16 .s126 { top:83%; }
+
+/*----------------------------
+	ROWS - LEFT POSITION
+------------------------------*/
+/* 1 */
+.fret1 .s7,  .fret2  .s13, .fret3  .s19, .fret4  .s25, .fret5  .s31,  .fret6  .s37,  .fret7  .s43,  .fret8  .s49,
+.fret1 .s13, .fret2  .s19, .fret3  .s25, .fret4  .s31, .fret5  .s37,  .fret6  .s43,  .fret7  .s49,  .fret8  .s55,
+.fret1 .s19, .fret2  .s25, .fret3  .s31, .fret4  .s37, .fret5  .s43,  .fret6  .s49,  .fret7  .s55,  .fret8  .s61,
+.fret1 .s25, .fret2  .s31, .fret3  .s37, .fret4  .s43, .fret5  .s49,  .fret6  .s55,  .fret7  .s61,  .fret8  .s67,
+.fret1 .s31, .fret2  .s37, .fret3  .s43, .fret4  .s49, .fret5  .s55,  .fret6  .s61,  .fret7  .s67,  .fret8  .s73,
+.fret9 .s55, .fret10 .s61, .fret11 .s67, .fret12 .s73, .fret13 .s79,  .fret14 .s85,  .fret15 .s91,  .fret16 .s97,
+.fret9 .s61, .fret10 .s67, .fret11 .s73, .fret12 .s79, .fret13 .s85,  .fret14 .s91,  .fret15 .s97,  .fret16 .s103,
+.fret9 .s67, .fret10 .s73, .fret11 .s79, .fret12 .s85, .fret13 .s91,  .fret14 .s97,  .fret15 .s103, .fret16 .s109,
+.fret9 .s73, .fret10 .s79, .fret11 .s85, .fret12 .s91, .fret13 .s97,  .fret14 .s103, .fret15 .s109, .fret16 .s115,
+.fret9 .s79, .fret10 .s85, .fret11 .s91, .fret12 .s97, .fret13 .s103, .fret14 .s109, .fret15 .s115, .fret16 .s121 { left:84%; }
+
+/* 2 */
+.fret1 .s8,  .fret2  .s14, .fret3  .s20, .fret4  .s26, .fret5  .s32,  .fret6  .s38,  .fret7  .s44,  .fret8  .s50,
+.fret1 .s14, .fret2  .s20, .fret3  .s26, .fret4  .s32, .fret5  .s38,  .fret6  .s44,  .fret7  .s50,  .fret8  .s56,
+.fret1 .s20, .fret2  .s26, .fret3  .s32, .fret4  .s38, .fret5  .s44,  .fret6  .s50,  .fret7  .s56,  .fret8  .s62,
+.fret1 .s32, .fret2  .s38, .fret3  .s44, .fret4  .s50, .fret5  .s56,  .fret6  .s62,  .fret7  .s68,  .fret8  .s74,
+.fret1 .s26, .fret2  .s32, .fret3  .s38, .fret4  .s44, .fret5  .s50,  .fret6  .s56,  .fret7  .s62,  .fret8  .s68,
+.fret9 .s56, .fret10 .s62, .fret11 .s68, .fret12 .s74, .fret13 .s80,  .fret14 .s86,  .fret15 .s92,  .fret16 .s98,
+.fret9 .s62, .fret10 .s68, .fret11 .s74, .fret12 .s80, .fret13 .s86,  .fret14 .s92,  .fret15 .s98,  .fret16 .s104,
+.fret9 .s68, .fret10 .s74, .fret11 .s80, .fret12 .s86, .fret13 .s92,  .fret14 .s98,  .fret15 .s104, .fret16 .s110,
+.fret9 .s74, .fret10 .s80, .fret11 .s86, .fret12 .s92, .fret13 .s98,  .fret14 .s104, .fret15 .s110, .fret16 .s116,
+.fret9 .s80, .fret10 .s86, .fret11 .s92, .fret12 .s98, .fret13 .s104, .fret14 .s110, .fret15 .s116, .fret16 .s122 { left:67.5%; }
+
+/* 3 */
+.fret1 .s9,  .fret2  .s15, .fret3  .s21, .fret4  .s27, .fret5  .s33,  .fret6  .s39,  .fret7  .s45,  .fret8  .s51,
+.fret1 .s15, .fret2  .s21, .fret3  .s27, .fret4  .s33, .fret5  .s39,  .fret6  .s45,  .fret7  .s51,  .fret8  .s57,
+.fret1 .s21, .fret2  .s27, .fret3  .s33, .fret4  .s39, .fret5  .s45,  .fret6  .s51,  .fret7  .s57,  .fret8  .s63,
+.fret1 .s27, .fret2  .s33, .fret3  .s39, .fret4  .s45, .fret5  .s51,  .fret6  .s57,  .fret7  .s63,  .fret8  .s69,
+.fret1 .s33, .fret2  .s39, .fret3  .s45, .fret4  .s51, .fret5  .s57,  .fret6  .s63,  .fret7  .s69,  .fret8  .s75,
+.fret9 .s57, .fret10 .s63, .fret11 .s69, .fret12 .s75, .fret13 .s81,  .fret14 .s87,  .fret15 .s93,  .fret16 .s99,
+.fret9 .s63, .fret10 .s69, .fret11 .s75, .fret12 .s81, .fret13 .s87,  .fret14 .s93,  .fret15 .s99,  .fret16 .s105,
+.fret9 .s69, .fret10 .s75, .fret11 .s81, .fret12 .s87, .fret13 .s93,  .fret14 .s99,  .fret15 .s105, .fret16 .s111,
+.fret9 .s75, .fret10 .s81, .fret11 .s87, .fret12 .s93, .fret13 .s99,  .fret14 .s105, .fret15 .s111, .fret16 .s117,
+.fret9 .s81, .fret10 .s87, .fret11 .s93, .fret12 .s99, .fret13 .s105, .fret14 .s111, .fret15 .s117, .fret16 .s123 { left:50%; }
+
+/* 4 */
+.fret1 .s10, .fret2  .s16, .fret3  .s22, .fret4  .s28,  .fret5  .s34,  .fret6  .s40,  .fret7  .s46,  .fret8  .s52,
+.fret1 .s16, .fret2  .s22, .fret3  .s28, .fret4  .s34,  .fret5  .s40,  .fret6  .s46,  .fret7  .s52,  .fret8  .s58,
+.fret1 .s22, .fret2  .s28, .fret3  .s34, .fret4  .s40,  .fret5  .s46,  .fret6  .s52,  .fret7  .s58,  .fret8  .s64,
+.fret1 .s28, .fret2  .s34, .fret3  .s40, .fret4  .s46,  .fret5  .s52,  .fret6  .s58,  .fret7  .s64,  .fret8  .s70,
+.fret1 .s34, .fret2  .s40, .fret3  .s46, .fret4  .s52,  .fret5  .s58,  .fret6  .s64,  .fret7  .s70,  .fret8  .s76,
+.fret9 .s58, .fret10 .s64, .fret11 .s70, .fret12 .s76,  .fret13 .s82,  .fret14 .s88,  .fret15 .s94,  .fret16 .s100,
+.fret9 .s64, .fret10 .s70, .fret11 .s76, .fret12 .s82,  .fret13 .s88,  .fret14 .s94,  .fret15 .s100, .fret16 .s106,
+.fret9 .s70, .fret10 .s76, .fret11 .s82, .fret12 .s88,  .fret13 .s94,  .fret14 .s100, .fret15 .s106, .fret16 .s112,
+.fret9 .s76, .fret10 .s82, .fret11 .s88, .fret12 .s94,  .fret13 .s100, .fret14 .s106, .fret15 .s112, .fret16 .s118,
+.fret9 .s82, .fret10 .s88, .fret11 .s94, .fret12 .s100, .fret13 .s106, .fret14 .s112, .fret15 .s118, .fret16 .s124 { left:32%; }
+
+/* 5 */
+.fret1 .s11, .fret2  .s17, .fret3  .s23, .fret4  .s29,  .fret5  .s35,  .fret6  .s41,  .fret7  .s47,  .fret8  .s53,
+.fret1 .s17, .fret2  .s23, .fret3  .s29, .fret4  .s35,  .fret5  .s41,  .fret6  .s47,  .fret7  .s53,  .fret8  .s59,
+.fret1 .s23, .fret2  .s29, .fret3  .s35, .fret4  .s41,  .fret5  .s47,  .fret6  .s53,  .fret7  .s59,  .fret8  .s65,
+.fret1 .s29, .fret2  .s35, .fret3  .s41, .fret4  .s47,  .fret5  .s53,  .fret6  .s59,  .fret7  .s65,  .fret8  .s71,
+.fret1 .s35, .fret2  .s41, .fret3  .s47, .fret4  .s53,  .fret5  .s59,  .fret6  .s65,  .fret7  .s71,  .fret8  .s77,
+.fret9 .s59, .fret10 .s65, .fret11 .s71, .fret12 .s77,  .fret13 .s83,  .fret14 .s89,  .fret15 .s95,  .fret16 .s101,
+.fret9 .s65, .fret10 .s71, .fret11 .s77, .fret12 .s83,  .fret13 .s89,  .fret14 .s95,  .fret15 .s101, .fret16 .s107,
+.fret9 .s71, .fret10 .s77, .fret11 .s83, .fret12 .s89,  .fret13 .s95,  .fret14 .s101, .fret15 .s107, .fret16 .s113,
+.fret9 .s77, .fret10 .s83, .fret11 .s89, .fret12 .s95,  .fret13 .s101, .fret14 .s107, .fret15 .s113, .fret16 .s119,
+.fret9 .s83, .fret10 .s89, .fret11 .s95, .fret12 .s101, .fret13 .s107, .fret14 .s113, .fret15 .s119, .fret16 .s125 { left:14.1%; }
+
+/* 6 */
+.fret1 .s12, .fret2  .s18, .fret3  .s24, .fret4  .s30,  .fret5  .s36,  .fret6  .s42,  .fret7  .s48,  .fret8  .s54,
+.fret1 .s18, .fret2  .s24, .fret3  .s30, .fret4  .s36,  .fret5  .s42,  .fret6  .s48,  .fret7  .s54,  .fret8  .s60,
+.fret1 .s24, .fret2  .s30, .fret3  .s36, .fret4  .s42,  .fret5  .s48,  .fret6  .s54,  .fret7  .s60,  .fret8  .s66,
+.fret1 .s30, .fret2  .s36, .fret3  .s42, .fret4  .s48,  .fret5  .s54,  .fret6  .s60,  .fret7  .s66,  .fret8  .s72,
+.fret1 .s36, .fret2  .s42, .fret3  .s48, .fret4  .s54,  .fret5  .s60,  .fret6  .s66,  .fret7  .s72,  .fret8  .s78,
+.fret9 .s60, .fret10 .s66, .fret11 .s72, .fret12 .s78,  .fret13 .s84,  .fret14 .s90,  .fret15 .s96,  .fret16 .s102,
+.fret9 .s66, .fret10 .s72, .fret11 .s78, .fret12 .s84,  .fret13 .s90,  .fret14 .s96,  .fret15 .s102, .fret16 .s108,
+.fret9 .s72, .fret10 .s78, .fret11 .s84, .fret12 .s90,  .fret13 .s96,  .fret14 .s102, .fret15 .s108, .fret16 .s114,
+.fret9 .s78, .fret10 .s84, .fret11 .s90, .fret12 .s96,  .fret13 .s102, .fret14 .s108, .fret15 .s114, .fret16 .s120,
+.fret9 .s84, .fret10 .s90, .fret11 .s96, .fret12 .s102, .fret13 .s108, .fret14 .s114, .fret15 .s120, .fret16 .s126 { left:-4%; }
+
+/*------------------
+	PRINT STYLES
+--------------------*/
+@media print{
+	.diaL, .diaM, .diaS { position:relative; background:none !important; }
+	.diaL b, .diaM b, .diaS b { padding-top:3px; background:#4b96d5 !important; color:#fff; -moz-border-radius:20px; text-indent:0 !important; text-align:center; }
+	.diaL b.fx, .diaM b.fx, .diaS b.fx, .diaL b.fo, .diaM b.fo, .diaS b.fo { background:none !important; color:#000; text-transform:uppercase; }
+	.diaL b.note, .diaM b.note, .diaS b.note { background:none !important; color:#000; }
+	.diaL b.fret, .diaM b.fret, .diaS b.fret { background:none !important; -moz-border-radius:20px; }
+	img.print { display:block !important; position:absolute; top:0; left:0; }
+	.bar1,.bar2,.bar3,.bar4,.bar5,.bar6 { display:none !important; }
+	.diaL b.nut,.diaM b.nut,.diaS b.nut { display:block !important; border-top:5px solid #000; -moz-border-radius:0; width:100%; text-indent:-9000em !important; background:none !important; }
+}
+

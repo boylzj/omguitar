@@ -1,0 +1,116 @@
+/* CONTENT */
+#chords .pContent .wrapper { width:68.5em; font-size:.9em; `padding-bottom:40px; }
+
+/*--------------
+	COLUMN 1
+----------------*/
+#col1 { float:left; width:50em; padding-left:30px; }
+
+/* NAME */
+#name { float:left; margin: 1em 0; }
+#name h2, #name h3 { margin:0 0 10px; }
+#name h2 em { font-size:.6em; font-style:normal; font-weight:bold; line-height:0.4em; }
+#name h3 { font-size:15px; font-weight:normal; color:#888; }
+
+/* VOICINGS */
+#voices { float:left; clear:left; width:100%; }
+#voices:after { content:"."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+#voices .col1 { float:left; width:48%;}
+#voices .col2 { float:left; width:48%;}
+#voices .voice { position:relative; float:left; margin:20px 0 3em;padding-left: 55px;}
+#voices .voice .chord_img { float:left;width: 200px;height: 150px; border: 1px solid #dfdfdf;margin-left: 10px;margin-top: 1px;}
+.voice img{border-top: 2px solid #ec5538;margin-top: 1px;}
+
+.pgChordFinder .pContent .wrapper { width:64.5em !important; }
+.pgChordFinder h5 { margin:0 0 1em 5px; }
+.pgChordFinder #voices { padding:20px 15px 10px 70px; width:auto; background:#f9f9f9; border:1px solid #d4d4d4; -moz-border-radius:10px; -webkit-border-radius:10px; margin-bottom: 1em; margin-top: 0.2em; }
+.pgChordFinder #voices .col1 { width:112px; margin-top:0; padding-top:0; }
+.pgChordFinder #voices h4 { padding-bottom:20px; }
+.pgChordFinder #voices h4 em { font-size:.7em; }
+.pgChordFinder #voices .col2 { float:left; width:212px; margin:0; padding:0 20px 0 0; }
+.pgChordFinder #voices .col3 { position:relative; float:right; width:248px; margin-top:0; overflow: visible; }
+.pgChordFinder #voices li { margin:0 0 1em 1em; list-style:disc; font-size:12px; }
+.pgChordFinder #chordPhoto { position:relative; padding:5px; border:1px solid #d4d4d4; background-color:#fff; height:150px; }
+.pgChordFinder #chordPhoto span { position:absolute; top:35%; left:25%; width:50%; color:#d4d4d4; text-align:center; }
+.pgChordFinder .chordFinderResults { padding:10px; min-height:260px; }
+
+#listDiagrams { padding-top:25px; padding-left:30px; width:635px; }
+#listDiagrams .dia { position:relative; float:left; margin-right:25px; padding-bottom:60px; }
+#listDiagrams .diaL b,#listDiagrams .diaM b,#listDiagrams .diaS b { cursor:default; }
+#listDiagrams .matched { background: url(../../images/guitar./images/guitar/share/chords/finder/chordFinderMatchArrows.png) no-repeat 35px 100%; margin-top:-25px; padding-bottom:75px; }
+#listDiagrams .msg { width:200px; }
+
+#chordFinder { margin-bottom:10px !important; }
+.msgChordFinder { margin:0 auto; text-align:center; }
+.matchedPhoto { position:absolute; top:-225px; right:-12px; padding:12px 15px 35px; background:url(../../images/guitar./images/guitar/share/chords/finder/photoBalloon.png) no-repeat 0 0; z-index:50; }
+.matchedPhoto .iClose { position:absolute; top:0; right:0; }
+.matchedImg { position:absolute; top:-32px; right:45%; }
+.matchedButton { position:absolute; bottom:10px; left:25%; background: url(../../images/guitar./images/guitar/share/chords/finder/chordFinderMatchArrows.png) no-repeat -563px 50%; }
+
+#chordFound { padding-left:30px; padding-bottom:20px; }
+#chordFound strong { font-weight: bold; }
+#chordFound a { text-decoration: none; }
+.clearFretboard { position:relative; top:7px; clear:left; display:block; margin:10px 0; padding:5px; text-align:center; font-size:14px; }
+
+/* Placeholder for printing diagrams, don't display in screen view. */
+#voices .voice img.print { position:absolute; top:0; left:0; float:none; border:none; }
+
+/*----------------
+	COLUMN 2
+------------------*/
+#col2 { float:right; width:14.2em; padding-right:26px; }
+
+/* CHORDS */
+.chordsMenu	{ margin:5px;}
+.chordsMenuCase	{height:490px;float: left;position:relative; background-color: #EAEAEA; border:1pt solid #A6AEA7; overflow: hidden; border-radius: 4pt;}
+
+/* MAYJORS  */
+#majors {float:left;}
+#majors li { margin:0; }
+#majors li a { display:block; padding:5px 20px; color:#666; font-size:40px; border-bottom: 1pt solid #CFCFCF;}
+#majors li a:hover { background-color:#fff;color: #ec5538; }
+#majors li a.sel   { background-color:#fff; color:#ec5538; }
+
+/* CHORD TYPES */
+.types{ float: left;width:135px; height:490px; margin-top:0; overflow:auto; overflow-x:hidden; overflow-y:scroll;border-left:1pt solid #A6AEA7; border-radius: 0px 4px 4px 0px;}
+.types li a { display:block; width:90%; padding:10px 10px; text-decoration:none; color:#666;
+	                      border-bottom:1pt solid #CFCFCF;}
+.types li a:hover { background-color:#fff; color: #ec5538;}
+.types li a.sel     { background-color:#fff; color:#ec5538; }
+
+
+/*------------------------------------
+	ADDING CHORDS - (song edit)
+--------------------------------------*/
+#addChordsModule { margin-bottom: 20px; position:relative; background-color: #CFD9D1; border:1pt solid #A6AEA7; overflow: hidden; border-radius: 4pt;}
+
+#addChordsModule small.saveIndicator { position:absolute; bottom:-17px; left:-1px; display:none; width:100%; text-align:center; font-size:10px; color:#af0000; }
+
+#addChordsModule #majors { float:left; margin:0; width:33px; height:181px; overflow:hidden; border-radius: 4px 0px 0px 4px}
+#addChordsModule #majors li { height:25px; margin:0 0 1px; }
+#addChordsModule #majors li:first-child a { border-top:none; border-bottom:none; }
+#addChordsModule #majors li a { padding:6px 12px; font-size:12px; line-height:12px;}
+#addChordsModule #majors li a.sel {background-color:;}
+
+#addChordsModule #types { float:left;width:86px; height:181px; overflow-y:visible; }
+#addChordsModule #types ul { right:0; top:0; display:none; height:auto; width:100%; overflow-y:visible; }
+#addChordsModule #types ul#typeA { display:block; }
+#addChordsModule #types li { }
+#addChordsModule #types li:first-child a { border-top:none; }
+#addChordsModule #types li a       { font-size:10px; line-height:7px; padding:9px 5px 8px; }
+
+#addChordsModule #diagrams { float:right; overflow:hidden; width:132px; height:182px; background-color:#fff; border-radius: 0px 4px 4px 0px }
+#addChordsModule #diagrams h6 { margin:0; padding:5px 0 5px 7px; font-size:12px; font-weight:bold; border-bottom:1px dotted #888;}
+#addChordsModule #diagrams div.wrap { clear:right; overflow:auto; overflow-x:hidden; height:155px; }
+
+#addChordsModule #diagrams div.chord 			 { float:left; clear:left; position:relative; padding:15px 0 25px 35px; }
+#addChordsModule #diagrams div.chord:first-child { padding-top:15px; }
+#addChordsModule #diagrams div.chord:last-child  { padding-bottom:33px; }
+
+#addChordsModule #diagrams strong.chordSymbol { position:relative; left:-11px; display:block; width:80px; margin:0 0 14px; font-size:14px; font-weight:bold; text-align:center; }
+#addChordsModule #diagrams a.action 					  { position:absolute; top:27px; right:3px; }
+#addChordsModule #diagrams div.chord:first-child a.action { top:27px; }
+
+#addChordsModule #formulas { position:absolute; bottom:0; right:0; }
+
+

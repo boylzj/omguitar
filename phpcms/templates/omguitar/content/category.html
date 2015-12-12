@@ -1,0 +1,64 @@
+{template "content","header"}
+
+<div class="content">
+	<div class="index_title pt50 clearfix">
+		<h3><span class="main_word_color">作品</span>列表</h3>
+	</div>
+	<ul class="product_filter">
+		<li>
+			<span class="filter_title fl">演奏：</span>
+			<i class="filter_tag fl active">全部</i> 
+			<i class="filter_tag fl">弹唱</i> 
+			<i class="filter_tag fl">指弹</i> 
+		</li>
+		<li>
+			<span class="filter_title fl">曲风：</span>
+			<i class="filter_tag fl active">全部</i> 
+			<i class="filter_tag fl ">布鲁斯</i> 
+			<i class="filter_tag fl">流行</i>
+			<i class="filter_tag fl">乡村</i> 	
+			<i class="filter_tag fl">爵士</i> 
+			<i class="filter_tag fl">古典</i>
+			<i class="filter_tag fl">传统流行</i> 	
+			<i class="filter_tag fl">民谣</i>							
+		</li>
+		<li>
+			<span class="filter_title fl">类型：</span>
+			<i class="filter_tag fl active">全部</i> 
+			<i class="filter_tag fl">免费</i> 
+			<i class="filter_tag fl">付费</i> 			
+		</li>
+		<li>
+			<span class="filter_title fl">难度：</span>
+			<i class="filter_tag fl active">全部</i> 
+			<i class="filter_tag fl">练习</i> 
+			<i class="filter_tag fl">初级</i> 
+			<i class="filter_tag fl">高级</i> 						
+		</li>		
+	</ul>
+	<ul class="product_list clearfix">
+		{loop subcat(0,0,0,$siteid) $r}
+			{pc:content  action="lists" catid="$r[catid]" order="updatetime DESC" thumb="1" num="50" return="info"}
+				{php $categorys = getcache('category_content_'.$siteid,'commons');}
+				<h3>$info</h3>
+				{loop $info $v}
+					<h4>$v</h4>
+					{loop $v $x $z}
+					<p>{$x} {$z}</p>
+					{/loop}
+				{/loop}
+			{/pc}
+		{/loop}							
+	</ul>
+</div>
+
+{template "content","footer"}
+
+<script type="text/javascript">
+	$(function(){
+		
+	})
+</script>
+
+</body>
+</html>

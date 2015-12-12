@@ -1,0 +1,11 @@
+{template "content","header"}
+{loop getcache('grouplist','member') $k $v}
+	{loop $v $x $y}
+		{if $y=="老师"}
+			{php echo $v["groupid"]}
+		{else}
+
+		{/if}
+	{/loop}
+{/loop}
+{template "content","footer"}

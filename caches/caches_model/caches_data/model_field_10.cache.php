@@ -1,0 +1,43 @@
+<?php
+return array (
+  'person_info' => 
+  array (
+    'fieldid' => '112',
+    'modelid' => '10',
+    'siteid' => '0',
+    'field' => 'person_info',
+    'name' => '自我介绍',
+    'tips' => '请介绍下自己。',
+    'css' => '',
+    'minlength' => '0',
+    'maxlength' => '0',
+    'pattern' => '',
+    'errortips' => '',
+    'formtype' => 'textarea',
+    'setting' => 'array (
+  \'width\' => \'100%\',
+  \'height\' => \'60\',
+  \'defaultvalue\' => \'\',
+  \'enablehtml\' => \'0\',
+)',
+    'formattribute' => '',
+    'unsetgroupids' => '',
+    'unsetroleids' => '',
+    'iscore' => '0',
+    'issystem' => '0',
+    'isunique' => '0',
+    'isbase' => '1',
+    'issearch' => '0',
+    'isadd' => '1',
+    'isfulltext' => '0',
+    'isposition' => '0',
+    'listorder' => '0',
+    'disabled' => '0',
+    'isomnipotent' => '0',
+    'width' => '100%',
+    'height' => '60',
+    'defaultvalue' => '',
+    'enablehtml' => '0',
+  ),
+);
+?>

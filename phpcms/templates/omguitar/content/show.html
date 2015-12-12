@@ -1,0 +1,107 @@
+{template "content","header"}
+<div class="content">
+	<div class="second_nav"><a href="http://www.omguitar.cn/index.php?m=content&c=index&a=lists&catid=9"><返回作品列表页</a></div>
+	<h3 class="product_title fwb">{$title}</h3>
+	<div class="clearfix pt20 pb30 product_header">
+		<div class="fl product_pic"><img src="{thumb($thumb,230,230)}" alt="blues" /></div>
+		<div class="fl pl50 product_detail_r">
+			<p class="f14"><span class="gray_color">作曲：</span><span class="fwb">{$author}</span></p>
+			<p class="pt5 f14"><span class="gray_color">歌手：</span><span class="fwb">{$singer}</span></p>
+			<p class="pt30 f14 dark_word_color pb15">{$description}</p>
+			<div class="tag clearfix"><span class="tag_name">指弹</span><span class="tag_name">布鲁斯</span></div>
+		</div>
+	</div>
+	<div class="product_box pt30 clearfix">
+		<div class="product_b_l">
+			<div class="video">
+				<div class="video_wrap">
+					{$content}
+				</div>
+			</div>
+			<div class="video_tool">
+				<div class="join_number clearfix">
+					<i id="ml0" class="see_icon" title="看过">&nbsp;</i><span id="hits" class="see_number" title="看过"></span>
+					<!--<i class="talk_icon" title="赞过">&nbsp;</i><span id="comment" class="praise_number" title="赞过">2456</span>-->
+					<i title="难度" class="level fr"><img src="{IMG_PATH}guitar/level_3.png" alt="" class="fl"></i>
+				</div>
+			</div>
+			<div class="giutar_pro pt30">
+				{loop $guitar_tap $r}
+				  <img alt="{$r[alt]}" src="{$r[url]}" />
+				{/loop}
+			</div>
+			<div class="download mb10">下载以上谱子</div>
+			<div class="second_nav clear"><a href="http://www.omguitar.cn/index.php?m=content&c=index&a=lists&catid=9"><返回作品列表页</a></div>
+		</div>
+		<div class="product_b_r">
+            {php $meminfo=get_memberinfo_buyusername($username);$ssouid=$meminfo['phpssouid']}                       
+			<div class="p_th_avatar"><a href="#"><img src="{get_memberavatar($ssouid,48,45)}"></a></div><a href="teather_detail.html" class="p_th_name">{$meminfo[nickname]}</a>
+		<?php
+	        if(isset($ssouid)){
+	              $m_more_db = getcache('member_model', 'commons');
+	              $this->db->table_name = $this->db->db_tablepre.$m_more_db[$meminfo['modelid']]['tablename'];
+	              $m_more = $this->db->get_one(array('userid'=>$ssouid));
+	         }
+		?>
+			<p class="pt15 f14 dark_word_color clear pb30 p_th_des">{$m_more['person_info']}</p>
+			<!--<h3 class="other_p_title pt30"><span>最新作品</span><a href="teather_detail.html">全部作品</a></h3>
+			<ul class="other_p_list">
+				<li class="clearfix"><a href="#"><span class="fl">加勒比海盗</span><span class="fr">2015-11-23</span></a></li>
+				<li class="clearfix"><a href="#"><span class="fl">加勒比海盗</span><span class="fr">2015-11-23</span></a></li>
+				<li class="clearfix"><a href="#"><span class="fl">加勒比海盗</span><span class="fr">2015-11-23</span></a></li>
+				<li class="clearfix"><a href="#"><span class="fl">加勒比海盗</span><span class="fr">2015-11-23</span></a></li>
+				<li class="clearfix"><a href="#"><span class="fl">加勒比海盗</span><span class="fr">2015-11-23</span></a></li>
+			</ul>-->
+		</div>
+	</div>
+</div>
+{template "content","footer"}
+
+<script type="text/javascript">
+	$(function(){
+		$(".js_praise").click(function(){
+			var me = $(this);
+			var number = parseInt($(".praise_number").text(),10);
+			if(me.hasClass("to_praise_icon")){
+				me.removeClass("to_praise_icon").addClass("praise_icon");
+				number++;
+				$(".praise_number").text(number);//数字加一
+			}
+			//ajax
+		});
+
+		window.onscroll = function(){
+			var video = $(".video");
+			var video_wrap = $(".video_wrap");
+			var videoTop = video.offset().top;
+			var scrollTop = $(window).scrollTop();
+			var video_h = video.height();
+			var video_w = video.width();
+			var l_space = $(".product_b_r").offset().left;
+			var new_video_w = $(".product_b_r").width();
+			var new_video_h = 200
+			if(scrollTop>videoTop+video_h){
+				video_wrap.css({
+					"position":"fixed",
+					"z-index":1000,
+					"left":l_space+50,
+					"bottom":250,
+					"width":new_video_w,
+					"height":new_video_h
+				})
+			}else{
+				video_wrap.css({
+					"position":"static",
+					"z-index":0,
+					"left":"auto",
+					"bottom":"auto",
+					"width":"100%",
+					"height":"100%"					
+				})
+			}
+		}
+	})
+</script>
+<script language="JavaScript" src="{APP_PATH}api.php?op=count&id={$id}&modelid={$modelid}"></script>
+</body>
+</html>
